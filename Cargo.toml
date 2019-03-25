@@ -1,0 +1,7 @@
+[package]
+name = "rusty-flowerpot"
+version = "0.1.0"
+authors = ["chankyin"]
+edition = "2018"
+
+[dependencies]
