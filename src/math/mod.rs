@@ -2,6 +2,7 @@ use std::error::Error;
 use std::fmt::{Display, Formatter};
 
 pub mod matrix;
+pub mod square_matrix;
 
 #[derive(Debug)]
 pub struct MathError {

@@ -5,3 +5,4 @@ authors = ["chankyin"]
 edition = "2018"
 
 [dependencies]
+conv = "0.3"
