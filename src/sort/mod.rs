@@ -16,6 +16,7 @@ pub mod bubble;
 pub mod insertion;
 pub mod selection;
 pub mod merge;
+pub mod quick;
 
 macro_rules! assert_vec_eq {
     ($actual: expr, $expect: expr) => {
@@ -30,6 +31,7 @@ pub mod test {
     use crate::sort::insertion::InsertionSort;
     use crate::sort::selection::SelectionSort;
     use crate::sort::merge::MergeSort;
+    use crate::sort::quick::QuickSort;
 
     fn test<T: SortAlgo>() {
         assert_vec_eq!(T::sort(vec![5, 3, 1, 2, 4]), &vec![1, 2, 3, 4, 5]);
@@ -46,4 +48,7 @@ pub mod test {
 
     #[test]
     pub fn merge() { test::<MergeSort>() }
+
+    #[test]
+    pub fn quick() { test::<QuickSort>() }
 }
