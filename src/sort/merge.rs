@@ -22,7 +22,8 @@ fn merge_sort<T: Sortable>(vec: &mut Vec<T>, from: usize, to: usize) {
 }
 
 
-/// Complexity: O(v1.len() + v2.len())
+/// Time complexity: O(v1.len() + v2.len())
+/// Memory complexity: O(v1.len() + v2.len())
 pub fn merge_sorted<T: Sortable>(v1: &[T], v2: &[T]) -> Vec<T> {
     let mut ret: Vec<T> = Vec::with_capacity(v1.len() + v2.len());
     let mut i = v1.iter();
